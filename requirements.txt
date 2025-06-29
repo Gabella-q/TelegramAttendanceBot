@@ -1,3 +1,4 @@
-﻿python-telegram-bot==20.7
-pyTelegramBotAPI
-SQLAlchemy
+python-telegram-bot==20.7
+pyTelegramBotAPI==4.27.0
+SQLAlchemy==2.0.41
+python-dotenv
