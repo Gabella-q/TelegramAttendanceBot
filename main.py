@@ -1,6 +1,5 @@
 from datetime import datetime, timedelta
 import os
-import pdfkit
 import telebot
 
 from db_backend import db_session
