@@ -12,7 +12,7 @@ SUPER_HR = {
     "employee_id": os.environ.get("SUPER_HR_EMP_ID"),
     "fullname": os.environ.get("SUPER_HR_NAME"),
     "role": "HR",
-    "temp_pwd": os.environ.get("SUPER_HR_PWD"),
+    "temp_pwd": "12345"
     "last_chat_id": "",
     "is_active": True,
     "is_pwd_expired": False,
