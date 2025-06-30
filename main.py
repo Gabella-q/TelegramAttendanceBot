@@ -488,19 +488,19 @@ def handle_attendance_location(message):
 
 # Download attendance report
 #@bot.message_handler(commands=["download"])
-@bot.message_handler(func=lambda msg: msg.text in ["download"])
+#@bot.message_handler(func=lambda msg: msg.text in ["download"])
 #def download_report(message):
-    chat_id = message.chat.id
-    known_user = User.get_by_chat_id(chat_id)
-    if known_user:
-        curr_time = UTC_from_epoch(message.date)
-        data = list(map(lambda x: x.strip(), message.text.split("\n")))
-        if known_user.role == "HR":
-            if len(data) == 1:
-                start_date = datetime(
-                    year=curr_time.year, month=curr_time.month, day=curr_time.day
-                )
-                end_date = datetime(
+    #chat_id = message.chat.id
+    #known_user = User.get_by_chat_id(chat_id)
+    #if known_user:
+   #     curr_time = UTC_from_epoch(message.date)
+      #  data = list(map(lambda x: x.strip(), message.text.split("\n")))
+       # if known_user.role == "HR":
+          #  if len(data) == 1:
+             #   start_date = datetime(
+            #        year=curr_time.year, month=curr_time.month, day=curr_time.day
+             #   )
+             #   end_date = datetime(
                     year=curr_time.year,
                     month=curr_time.month,
                     day=curr_time.day,
