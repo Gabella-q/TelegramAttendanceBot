@@ -487,9 +487,9 @@ def handle_attendance_location(message):
 
 
 # Download attendance report
-@bot.message_handler(commands=["download"])
+#@bot.message_handler(commands=["download"])
 @bot.message_handler(func=lambda msg: msg.text in ["download"])
-def download_report(message):
+#def download_report(message):
     chat_id = message.chat.id
     known_user = User.get_by_chat_id(chat_id)
     if known_user:
