@@ -501,18 +501,18 @@ def handle_attendance_location(message):
             #        year=curr_time.year, month=curr_time.month, day=curr_time.day
              #   )
              #   end_date = datetime(
-                    year=curr_time.year,
-                    month=curr_time.month,
-                    day=curr_time.day,
-                    hour=23,
-                    minute=59,
-                    second=59,
-                )
-                start_date = to_UTC(start_date)
-                end_date = to_UTC(end_date)
-                attendance_records = Attendance.get_attendance_records(
-                    start_date, end_date
-                )
+                   # year=curr_time.year,
+                    #month=curr_time.month,
+                  #  day=curr_time.day,
+                #    hour=23,
+              #      minute=59,
+                #    second=59,
+            #  )
+               # start_date = to_UTC(start_date)
+              #  end_date = to_UTC(end_date)
+                #attendance_records = Attendance.get_attendance_records(
+                #    start_date, end_date
+             #   )
             elif len(data) == 2 or len(data) == 3:
                 emp_id = None
                 try:
